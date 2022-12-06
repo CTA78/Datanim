@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="./favicons/favicon.ico">
-    <link href= "/2_Fichiers/2_CSS/index.css" rel="stylesheet">
+    <link rel="icon" href="/1_Sources/2_Images/0_Icônes/Crayon.ico">
+    <link href="../2_CSS/index.css" rel="stylesheet">
 
     <title>TITRE</title>
 
@@ -20,29 +20,99 @@
 
     <main>
 
-    <p>
-        Choisir et trouver un thème qui vous intéresse et un jeu de données associé (fichier csv, json, ou API).
-        
-        Le fichier de données, s’il s’agit d’un fichier csv, peut alors être éventuellement importé dans votre base de
-        données o2switch (onglet importer de phpmyadmin). Attention, si le fichier est trop volumineux et qu’il y a
-        beaucoup de champs cela complique nettement cette étape.
-        
-        La page doit comporter au moins 3 graphes (présentés dans des canvas).
-        Si c’est pertinent vous pouvez également mettre une image qui corresponde à votre travail avec M. Clech, mais ce n’est pas obligatoire.
-        Ces 3 graphes présentent trois aspects du jeu de données choisi.
-        
-        Il faut également un court paragraphe présentant une analyse écrite et chiffrée du jeu choisie.
-        Il faut trouver un moyen pour que ce paragraphe apparaisse quand c’est pertinent et s’intègre harmonieusement dans la page.
-        Il doit comporter des indicateurs statistiques pertinent(moyenne, variance...).
-        
-        Il faut au moins un appel ajax permettant de filtrer les données sur au moins un des graphes.
-        Il faudra me rendre sur e-campus un court rapport donnant au moins le lien où je peux tester 
-        votre travail et justifiant les choix faits : thème choisi, pourquoi les 3 graphes présentées sont-ils pertinents, commentaire sur le design, les couleurs choisies...
-    
-    </p>
+        <header>
 
-</main>
-    
+            <nav>
+
+                <button id="btn1">Graphe 1</button>
+                <button id="btn2">Graphe 2</button>
+                <button id="btn3">Graphe 3</button>
+
+            </nav>
+
+        </header>
+
+        <section class="Bloque">
+
+            <canvas id="Graphe1"></canvas>
+
+            <p>
+                Choisir et trouver un thème qui vous intéresse et un jeu de données associé (fichier csv, json, ou API).
+
+                Le fichier de données, s’il s’agit d’un fichier csv, peut alors être éventuellement importé dans votre
+                base
+                de
+                données o2switch (onglet importer de phpmyadmin). Attention, si le fichier est trop volumineux et qu’il
+                y a
+                beaucoup de champs cela complique nettement cette étape.
+
+                La page doit comporter au moins 3 graphes (présentés dans des canvas).
+                Si c’est pertinent vous pouvez également mettre une image qui corresponde à votre travail avec M. Clech,
+                mais ce n’est pas obligatoire.
+                Ces 3 graphes présentent trois aspects du jeu de données choisi.
+
+                Il faut également un court paragraphe présentant une analyse écrite et chiffrée du jeu choisie.
+                Il faut trouver un moyen pour que ce paragraphe apparaisse quand c’est pertinent et s’intègre
+                harmonieusement dans la page.
+                Il doit comporter des indicateurs statistiques pertinent(moyenne, variance...).
+
+                Il faut au moins un appel ajax permettant de filtrer les données sur au moins un des graphes.
+                Il faudra me rendre sur e-campus un court rapport donnant au moins le lien où je peux tester
+                votre travail et justifiant les choix faits : thème choisi, pourquoi les 3 graphes présentées sont-ils
+                pertinents, commentaire sur le design, les couleurs choisies...
+
+            </p>
+
+        </section>
+
+        <section class="Bloque">
+
+            <canvas id="Graphe2"></canvas>
+
+            <p>
+
+            </p>
+
+        </section>
+
+        <section class="Bloque">
+
+            <canvas id="Graphe3"></canvas>
+
+            <p>
+
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="Noms">
+
+            <h6>
+
+                Alexandre Basei
+
+            </h6>
+
+        </div>
+
+        <div class="Noms">
+
+            <h6>
+
+                Chaker Arab
+
+            </h6>
+
+        </div>
+
+    </footer>
+
+    <script src="../3_JS/index.js"></script>
+
 </body>
 
 </html>

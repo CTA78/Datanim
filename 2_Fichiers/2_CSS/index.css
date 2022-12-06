@@ -1,86 +1,111 @@
 
-@import url ("./");
+@import url("../2_CSS/webfont.css");
 
 body{
-    background:linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background-blend-mode:multiply,multiply;
+
+  background:linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #999999;
+  background-blend-mode:multiply,multiply;
+  font-family:"hashibaregular";
+  color:#ffffff;
+  font-size:1.5REM;
+  padding:0;
+  margin:0;
+  
 }
 
-@font-face {
-    font-family: 'hashibaregular';
-    src: url('hashiba-webfont.woff2') format('woff2'),
-         url('hashiba-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+main{
+
+  display:flex;
 
 }
 
-/* CSS HEX */
---pink-lavender: #cdb4dbff;
---orchid-pink: #ffc8ddff;
---nadeshiko-pink: #ffafccff;
---uranian-blue: #bde0feff;
---baby-blue-eyes: #a2d2ffff;
+nav{
 
-/* CSS HSL */
---pink-lavender: hsla(278, 35%, 78%, 1);
---orchid-pink: hsla(337, 100%, 89%, 1);
---nadeshiko-pink: hsla(338, 100%, 84%, 1);
---uranian-blue: hsla(208, 97%, 87%, 1);
---baby-blue-eyes: hsla(209, 100%, 82%, 1);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:"mplus_rounded1cblack";
+  color:#000000;
+  font-size:2REM;
 
-/* SCSS HEX */
-$pink-lavender: #cdb4dbff;
-$orchid-pink: #ffc8ddff;
-$nadeshiko-pink: #ffafccff;
-$uranian-blue: #bde0feff;
-$baby-blue-eyes: #a2d2ffff;
+}
 
-/* SCSS HSL */
-$pink-lavender: hsla(278, 35%, 78%, 1);
-$orchid-pink: hsla(337, 100%, 89%, 1);
-$nadeshiko-pink: hsla(338, 100%, 84%, 1);
-$uranian-blue: hsla(208, 97%, 87%, 1);
-$baby-blue-eyes: hsla(209, 100%, 82%, 1);
+#btn1{
 
-/* SCSS RGB */
-$pink-lavender: rgba(205, 180, 219, 1);
-$orchid-pink: rgba(255, 200, 221, 1);
-$nadeshiko-pink: rgba(255, 175, 204, 1);
-$uranian-blue: rgba(189, 224, 254, 1);
-$baby-blue-eyes: rgba(162, 210, 255, 1);
+  background-color:blueviolet;
 
-/* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #cdb4dbff, #ffc8ddff, #ffafccff, #bde0feff, #a2d2ffff);
-$gradient-right: linear-gradient(90deg, #cdb4dbff, #ffc8ddff, #ffafccff, #bde0feff, #a2d2ffff);
-$gradient-bottom: linear-gradient(180deg, #cdb4dbff, #ffc8ddff, #ffafccff, #bde0feff, #a2d2ffff);
-$gradient-left: linear-gradient(270deg, #cdb4dbff, #ffc8ddff, #ffafccff, #bde0feff, #a2d2ffff);
-$gradient-top-right: linear-gradient(45deg, #cdb4dbff, #ffc8ddff, #ffafccff, #bde0feff, #a2d2ffff);
-$gradient-bottom-right: linear-gradient(135deg, #cdb4dbff, #ffc8ddff, #ffafccff, #bde0feff, #a2d2ffff);
-$gradient-top-left: linear-gradient(225deg, #cdb4dbff, #ffc8ddff, #ffafccff, #bde0feff, #a2d2ffff);
-$gradient-bottom-left: linear-gradient(315deg, #cdb4dbff, #ffc8ddff, #ffafccff, #bde0feff, #a2d2ffff);
-$gradient-radial: radial-gradient(#cdb4dbff, #ffc8ddff, #ffafccff, #bde0feff, #a2d2ffff);
+}
 
-/* CSV */
-cdb4db,ffc8dd,ffafcc,bde0fe,a2d2ff
+#btn2{
 
-/* With # */
-#cdb4db, #ffc8dd, #ffafcc, #bde0fe, #a2d2ff
+  background-color:blueviolet;
+  
+}
 
-/* Array */
-["cdb4db","ffc8dd","ffafcc","bde0fe","a2d2ff"]
+#btn3{
 
-/* Object */
-{"Pink Lavender":"cdb4db","Orchid Pink":"ffc8dd","Nadeshiko Pink":"ffafcc","Uranian Blue":"bde0fe","Baby Blue Eyes":"a2d2ff"}
+  background-color:blueviolet;
+  
+}
 
-/* Extended Array */
-[{"name":"Pink Lavender","hex":"cdb4db","rgb":[205,180,219],"cmyk":[6,18,0,14],"hsb":[278,18,86],"hsl":[278,35,78],"lab":[77,16,-16]},{"name":"Orchid Pink","hex":"ffc8dd","rgb":[255,200,221],"cmyk":[0,22,13,0],"hsb":[337,22,100],"hsl":[337,100,89],"lab":[86,23,-3]},{"name":"Nadeshiko Pink","hex":"ffafcc","rgb":[255,175,204],"cmyk":[0,31,20,0],"hsb":[338,31,100],"hsl":[338,100,84],"lab":[80,33,-3]},{"name":"Uranian Blue","hex":"bde0fe","rgb":[189,224,254],"cmyk":[26,12,0,0],"hsb":[208,26,100],"hsl":[208,97,87],"lab":[88,-5,-18]},{"name":"Baby Blue Eyes","hex":"a2d2ff","rgb":[162,210,255],"cmyk":[36,18,0,0],"hsb":[209,36,100],"hsl":[209,100,82],"lab":[82,-5,-27]}]
+.bloque{
 
-/* XML */
-<palette>
-  <color name="Pink Lavender" hex="cdb4db" r="205" g="180" b="219" />
-  <color name="Orchid Pink" hex="ffc8dd" r="255" g="200" b="221" />
-  <color name="Nadeshiko Pink" hex="ffafcc" r="255" g="175" b="204" />
-  <color name="Uranian Blue" hex="bde0fe" r="189" g="224" b="254" />
-  <color name="Baby Blue Eyes" hex="a2d2ff" r="162" g="210" b="255" />
-</palette>
+  background-color:blue;
+
+}
+
+#Graphe1{
+
+  background-color:bisque;
+  
+}
+
+#Graphe2{
+
+  background-color:bisque;
+  
+}
+
+#Graphe3{
+
+  background-color:bisque;
+  
+}
+
+p{
+  
+  font-family:"mplus_rounded1cmedium";
+  color:#ffffff;
+  font-size:1.5REM;
+  --pink-lavender:#cdb4dbff;
+  --orchid-pink:#ffc8ddff;
+  --nadeshiko-pink:#ffafccff;
+  --uranian-blue:#bde0feff;
+  --baby-blue-eyes:#a2d2ffff;
+
+  /*
+  $pink-lavender:#cdb4dbff;
+  $orchid-pink:#ffc8ddff;
+  $nadeshiko-pink:#ffafccff;
+  $uranian-blue:#bde0feff;
+  $baby-blue-eyes:#a2d2ffff; 
+  */
+
+}
+
+footer{
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+
+.Noms{
+
+  background-color:aqua;
+  font-family:"mplus_rounded1cthin";
+  color:#ffffff;
+  font-size:1REM;
+  
+}
